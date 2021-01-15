@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Fri Jan 15 03:48:20 2021 as: nmap -sC -sV -oA nmap/full -p- 192.168.77.89 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap/full -p- 192.168.77.89" start="1610700500" startstr="Fri Jan 15 03:48:20 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.77.89" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1610700500" endtime="1610703374"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.77.89" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="61216">
+<extrareasons reason="resets" count="61216"/>
+</extraports>
+<extraports state="filtered" count="4316">
+<extrareasons reason="host-unreaches" count="4261"/>
+<extrareasons reason="no-responses" count="55"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="33060"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<times srtt="266722" rttvar="3349" to="280118"/>
+</host>
+<runstats><finished time="1610703374" timestr="Fri Jan 15 04:36:14 2021" summary="Nmap done at Fri Jan 15 04:36:14 2021; 1 IP address (1 host up) scanned in 2874.23 seconds" elapsed="2874.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
