@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Jan 14 03:48:05 2021 as: nmap -sC -sV -oA nmap/full -p- 192.168.144.118 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap/full -p- 192.168.144.118" start="1610614085" startstr="Thu Jan 14 03:48:05 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.144.118" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1610614085" endtime="1610615855"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.144.118" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 f7:af:6c:d1:26:94:dc:e5:1a:22:1a:64:4e:1c:34:a9 (RSA)&#xa;  256 46:d2:8d:bd:2f:9e:af:ce:e2:45:5c:a6:12:c0:d9:19 (ECDSA)&#xa;  256 8d:11:ed:ff:7d:c5:a7:24:99:22:7f:ce:29:88:b2:4a (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC1olvmlFe91MEIq9rRibmAPSuiBlqVJnjbC14S6GCu5PKOueZLrjF1hTniGpuORaqc0wTfsBSakRTeReOCu8+wny4cvJTmMX+S3OB+6M4FjKHQBCCrf02PTRhmJOCrLbKuoL6duf3jo5ZU+mpEam+oykhhvRJpOkVzuq8ZtTsk0sMCy4ejhTtuAW0HKDqY3OLOSiEyaVwq8X5+ZDF1jB4rVYHtokss3vSpcQ6iyMQDp4YHikD/z9ZnjtS5LMi0AzDydU38dE7Dj2/z1dQOqesgLuvPamUPktLCMXGaxr4d4FddQdovsaIvb4qDGvRoWWTuLgLHNplfUEf5LhtdgA2Z</elem>
+<elem key="fingerprint">f7af6cd12694dce51a221a644e1c34a9</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBERmEc3tsg8x9wZ7nME6bQZdtqQnW3eSc0f4ubmPqJUSsaqb1UP8HYgLQ9wCGbHk0v8/BNi9ME5A9lvnotEAroY=</elem>
+<elem key="fingerprint">46d28dbd2f9eafcee2455ca612c0d919</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHKs3g+g1oyuJQ8RrFUjiZmvBs++u8yCu9NUskGLRnbq</elem>
+<elem key="fingerprint">8d11edff7dc5a72499227fce2988b24a</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" product="MySQL" version="5.5.5-10.3.23-MariaDB-0+deb10u1" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb:5.5.5-10.3.23-mariadb-0%2Bdeb10u1</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.5-10.3.23-MariaDB-0+deb10u1&#xa;  Thread ID: 4539&#xa;  Capabilities flags: 63486&#xa;  Some Capabilities: ODBCClient, SupportsCompression, FoundRows, IgnoreSpaceBeforeParenthesis, Support41Auth, SupportsTransactions, Speaks41ProtocolOld, SupportsLoadDataLocal, ConnectWithDatabase, LongColumnFlag, IgnoreSigpipes, InteractiveClient, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults&#xa;  Status: Autocommit&#xa;  Salt: C`9;Z8E1f0YPd&apos;5q^bOF&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.5-10.3.23-MariaDB-0+deb10u1</elem>
+<elem key="Thread ID">4539</elem>
+<elem key="Capabilities flags">63486</elem>
+<table key="Some Capabilities">
+<elem>ODBCClient</elem>
+<elem>SupportsCompression</elem>
+<elem>FoundRows</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>Support41Auth</elem>
+<elem>SupportsTransactions</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>LongColumnFlag</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>InteractiveClient</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleResults</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">C`9;Z8E1f0YPd&apos;5q^bOF</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+</ports>
+<times srtt="272146" rttvar="1577" to="278454"/>
+</host>
+<runstats><finished time="1610615855" timestr="Thu Jan 14 04:17:35 2021" summary="Nmap done at Thu Jan 14 04:17:35 2021; 1 IP address (1 host up) scanned in 1769.98 seconds" elapsed="1769.98" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
